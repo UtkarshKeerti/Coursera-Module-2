@@ -1,0 +1,112 @@
+
+body{
+	overflow:hidden;
+
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:helvetica;
+}
+.boxes{
+	display:flex;
+}
+/*For Heading <h1>*/
+h1{
+	margin:25px;
+	display:flex;
+}
+/*for Box-1*/
+.Chicken{
+	background-color:#c9798e;
+	padding:5px;
+	margin:0px 0px 10px 0px;
+	border:1px solid rgb(0,0,0);
+	border-top:transparent;
+	border-right:transparent;
+	float:right;
+}
+.Box-1{
+	background-color:gray; 
+	margin:15px;
+	width:33%;
+	border:1px solid rgb(0,0,0);
+
+}
+.Box-1>p{
+	padding:10px;
+	padding-top:50px;
+}
+/*for Box-2*/
+.Beef{
+	background-color:#a81e4c;
+	padding:5px;
+	margin:0px 0px 10px 0px;
+	border:1px solid rgb(0,0,0);
+	border-top:transparent;
+	border-right:transparent;
+	float:right;
+}
+.Box-2{
+	background-color:gray; 
+	margin:15px;
+	width:33%;
+	border:1px solid rgb(0,0,0);
+	
+	}
+.Box-2>p{
+	padding:10px;
+	padding-top:50px;
+}
+/*for Box-3*/
+.Sushi{
+	background-color:#e3e6aa;
+	padding:5px;
+	margin:0px 0px 10px 0px;
+	border:1px solid rgb(0,0,0);
+	border-top:transparent;
+	border-right:transparent;
+	float:right;
+}
+.Box-3{
+	background-color:gray; 
+	margin:15px;
+	width:33%;
+	border:1px solid rgb(0,0,0);
+}
+.Box-3>p{
+	padding:10px;
+	padding-top:50px;
+}
+@media (min-width:768px) and (max-width: 991px){
+	.boxes{
+		flex-wrap:wrap;
+
+	}
+		.Box-1{
+			width:45%;
+		}
+		.Box-2{
+			width:45%;
+		}
+		.Box-3{
+			display:block;
+			width:94%;
+		}
+}
+@media (max-width: 767px){
+	.boxes{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.Box-1{
+			width:100%;
+		}
+		.Box-2{
+			width:100%;
+		}
+		.Box-3{
+			width:100%;
+		}
+}
